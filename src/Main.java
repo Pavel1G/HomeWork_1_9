@@ -33,8 +33,8 @@ public class Main {
     public static void printBook(Book[] arrBooks) {
         for (int i = 0; i < arrBooks.length; i++) {
             if (arrBooks[i] != null) {
-                System.out.println(arrBooks[i].getAuthor().getName() + " " + arrBooks[i].getAuthor().getSurname() + ": " +
-                        arrBooks[i].getBookName() + ": " + arrBooks[i].getYearWriting());
+                System.out.println(arrBooks[i].getAuthorName() + ": " + arrBooks[i].getBookName() + ": " +
+                        arrBooks[i].getYearWriting());
             }
         }
     }

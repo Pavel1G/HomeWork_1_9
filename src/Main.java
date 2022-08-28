@@ -10,32 +10,17 @@ public class Main {
 
         bookAlice.setYearWriting(1985);
 
-        Book[] arrBooks = new Book[5];
+        var lib = new Library(5);
+        lib.addBookToLibrary(bookAlice);
+        lib.addBookToLibrary(bookVillage);
+        lib.addBookToLibrary(book1984);
+        lib.addBookToLibrary(bookAnimalFarm);
 
-        addBook(arrBooks, bookAlice);
-        addBook(arrBooks, bookVillage);
-        addBook(arrBooks, book1984);
-        addBook(arrBooks, bookAnimalFarm);
-
-        printBook(arrBooks);
+//        lib.printBook();
+        lib.printInfoByName("Village");
     }
 
-    public static Book[] addBook(Book[] arrBooks, Book book) {
-        for (int i = 0; i < arrBooks.length; i++) {
-            if (arrBooks[i] == null) {
-                arrBooks[i] = book;
-                break;
-            }
-        }
-        return arrBooks;
-    }
 
-    public static void printBook(Book[] arrBooks) {
-        for (int i = 0; i < arrBooks.length; i++) {
-            if (arrBooks[i] != null) {
-                System.out.println(arrBooks[i].getAuthorName() + ": " + arrBooks[i].getBookName() + ": " +
-                        arrBooks[i].getYearWriting());
-            }
-        }
-    }
+
+
 }

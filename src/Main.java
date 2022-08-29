@@ -17,10 +17,9 @@ public class Main {
         lib.addBookToLibrary(bookAnimalFarm);
 
 //        lib.printBook();
-        lib.printInfoByName("Village");
+//        lib.printInfoByName("Village");
+        System.out.println(book1984.toString());
     }
-
-
 
 
 }

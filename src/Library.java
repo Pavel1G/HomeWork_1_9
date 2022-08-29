@@ -2,7 +2,6 @@ import java.lang.reflect.Array;
 
 public class Library {
     private Book[] books;
-    private int currentSize;
 
     public Library(int size) {
         books = new Book[size];
